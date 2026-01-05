@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="restaurant-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="restaurant-name">Bella Vista</span>
+                        <span class="tagline">Fine Italian Dining</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="menu.html" class="nav-link active"><i class="fas fa-utensils"></i> Menu</a></li>
+                        <li><a href="reservations.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Reservations</a></li>
+                        <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <!-- Mobile Menu -->
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+                
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <a href="reservations.html" class="reserve-btn">
+                        <i class="fas fa-table"></i> Reserve Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Menu Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Our Menu</h1>
+            <p class="page-subtitle">Experience authentic Italian flavors crafted with passion</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="pasta">Pasta</button>
+                <button class="category-btn" data-category="pizza">Pizza</button>
+                <button class="category-btn" data-category="main">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <!-- Appetizers -->
+            <section class="menu-section active" id="appetizers">
+                <h2 class="section-title">Appetizers</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Bruschetta Classica</h3>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p>Toasted bread topped with fresh tomatoes, garlic, basil, and olive oil</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Calamari Fritti</h3>
+                            <span class="price">$18.50</span>
+                        </div>
+                        <p>Crispy fried calamari served with lemon aioli</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Burrata Caprese</h3>
+                            <span class="price">$16.99</span>
+                        </div>
+                        <p>Fresh burrata cheese with heirloom tomatoes, basil, and balsamic glaze</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Antipasto Platter</h3>
+                            <span class="price">$24.99</span>
+                        </div>
+                        <p>Selection of Italian cured meats, cheeses, olives, and marinated vegetables</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Pasta -->
+            <section class="menu-section" id="pasta">
+                <h2 class="section-title">Pasta</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Spaghetti Carbonara</h3>
+                            <span class="price">$22.99</span>
+                        </div>
+                        <p>Classic Roman pasta with eggs, pecorino cheese, pancetta, and black pepper</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Fettuccine Alfredo</h3>
+                            <span class="price">$21.50</span>
+                        </div>
+                        <p>Fresh fettuccine in creamy parmesan sauce</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Lasagna Bolognese</h3>
+                            <span class="price">$24.99</span>
+                        </div>
+                        <p>Layers of pasta, meat sauce, béchamel, and mozzarella</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Seafood Linguine</h3>
+                            <span class="price">$26.99</span>
+                        </div>
+                        <p>Linguine with shrimp, scallops, mussels in white wine garlic sauce</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Pizza -->
+            <section class="menu-section" id="pizza">
+                <h2 class="section-title">Wood-Fired Pizza</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Margherita</h3>
+                            <span class="price">$18.99</span>
+                        </div>
+                        <p>San Marzano tomatoes, fresh mozzarella, basil, olive oil</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pepperoni</h3>
+                            <span class="price">$20.99</span>
+                        </div>
+                        <p>Spicy pepperoni, mozzarella, tomato sauce, oregano</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Quattro Formaggi</h3>
+                            <span class="price">$22.99</span>
+                        </div>
+                        <p>Four cheese blend: mozzarella, gorgonzola, parmesan, ricotta</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Prosciutto e Rucola</h3>
+                            <span class="price">$23.50</span>
+                        </div>
+                        <p>Prosciutto, arugula, cherry tomatoes, shaved parmesan</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Main Courses -->
+            <section class="menu-section" id="main">
+                <h2 class="section-title">Main Courses</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Osso Buco alla Milanese</h3>
+                            <span class="price">$32.99</span>
+                        </div>
+                        <p>Braised veal shanks in white wine with vegetables and saffron risotto</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Branzino al Sale</h3>
+                            <span class="price">$28.50</span>
+                        </div>
+                        <p>Whole Mediterranean sea bass baked in sea salt crust with herbs</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pollo alla Parmigiana</h3>
+                            <span class="price">$24.99</span>
+                        </div>
+                        <p>Breaded chicken breast topped with marinara sauce and melted mozzarella</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Maiale Arrosto</h3>
+                            <span class="price">$26.99</span>
+                        </div>
+                        <p>Slow-roasted pork loin with rosemary potatoes and seasonal vegetables</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Desserts -->
+            <section class="menu-section" id="desserts">
+                <h2 class="section-title">Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tiramisu</h3>
+                            <span class="price">$12.99</span>
+                        </div>
+                        <p>Classic Italian dessert with espresso-soaked ladyfingers and mascarpone</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Panna Cotta</h3>
+                            <span class="price">$10.99</span>
+                        </div>
+                        <p>Vanilla cream custard with berry compote</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cannoli Siciliani</h3>
+                            <span class="price">$11.50</span>
+                        </div>
+                        <p>Crispy pastry tubes filled with sweet ricotta cream</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Gelato Trio</h3>
+                            <span class="price">$13.99</span>
+                        </div>
+                        <p>Three scoops of homemade gelato (choose your flavors)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Drinks -->
+            <section class="menu-section" id="drinks">
+                <h2 class="section-title">Beverages</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Italian Coffee</h3>
+                            <span class="price">$4.50</span>
+                        </div>
+                        <p>Espresso, Cappuccino, Latte, or Macchiato made with premium Italian beans</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>House Wine Selection</h3>
+                            <span class="price">$8.99</span>
+                        </div>
+                        <p>Red, white, or rosé wines by the glass from our carefully curated Italian vineyards</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Italian Sodas</h3>
+                            <span class="price">$4.99</span>
+                        </div>
+                        <p>Aranciata, Limonata, or Chinotto - authentic Italian soft drinks</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Mineral Water</h3>
+                            <span class="price">$3.99</span>
+                        </div>
+                        <p>San Pellegrino sparkling or Acqua Panna still water (750ml)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Download Menu Button -->
+            <div class="download-menu">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download Full Menu (PDF)
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="restaurant-name">Bella Vista</span>
+                    <span class="tagline">Fine Italian Dining</span>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                    <p class="copyright">&copy; <span id="currentYear"></span> Bella Vista Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Menu category switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const menuSections = document.querySelectorAll('.menu-section');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and sections
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    menuSections.forEach(s => s.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding section
+                    const category = this.getAttribute('data-category');
+                    document.getElementById(category).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

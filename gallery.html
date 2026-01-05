@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="restaurant-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="restaurant-name">Bella Vista</span>
+                        <span class="tagline">Fine Italian Dining</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="menu.html" class="nav-link"><i class="fas fa-utensils"></i> Menu</a></li>
+                        <li><a href="reservations.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Reservations</a></li>
+                        <li><a href="gallery.html" class="nav-link active"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <!-- Mobile Menu -->
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+                
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <a href="reservations.html" class="reserve-btn">
+                        <i class="fas fa-table"></i> Reserve Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Our Gallery</h1>
+            <p class="page-subtitle">A visual journey through our restaurant, dishes, and ambiance</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Gallery Categories -->
+            <div class="gallery-categories">
+                <button class="gallery-category-btn active" data-filter="all">All</button>
+                <button class="gallery-category-btn" data-filter="food">Food</button>
+                <button class="gallery-category-btn" data-filter="restaurant">Restaurant</button>
+                <button class="gallery-category-btn" data-filter="events">Events</button>
+                <button class="gallery-category-btn" data-filter="chef">Chef's Corner</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Food Images -->
+                <div class="gallery-item food">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pasta Dish">
+                    <div class="gallery-overlay">
+                        <h3>Handmade Pasta</h3>
+                        <p>Fresh pasta prepared daily</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item food">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pizza">
+                    <div class="gallery-overlay">
+                        <h3>Wood-Fired Pizza</h3>
+                        <p>Fresh from our oven</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item food">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tiramisu">
+                    <div class="gallery-overlay">
+                        <h3>Tiramisu</h3>
+                        <p>Classic Italian dessert</p>
+                    </div>
+                </div>
+                
+                <!-- Restaurant Images -->
+                <div class="gallery-item restaurant">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <h3>Main Dining Room</h3>
+                        <p>Elegant atmosphere</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item restaurant">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <h3>Interior Design</h3>
+                        <p>Modern Italian decor</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item restaurant">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Outdoor Seating">
+                    <div class="gallery-overlay">
+                        <h3>Outdoor Patio</h3>
+                        <p>Al fresco dining</p>
+                    </div>
+                </div>
+                
+                <!-- Events Images -->
+                <div class="gallery-item events">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Private Event">
+                    <div class="gallery-overlay">
+                        <h3>Private Events</h3>
+                        <p>Perfect for celebrations</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item events">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Wine Tasting">
+                    <div class="gallery-overlay">
+                        <h3>Wine Tasting</h3>
+                        <p>Monthly wine events</p>
+                    </div>
+                </div>
+                
+                <!-- Chef Images -->
+                <div class="gallery-item chef">
+                    <img src="https://images.unsplash.com/photo-1589010588553-46e8aa74c111?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Chef Cooking">
+                    <div class="gallery-overlay">
+                        <h3>Chef Antonio</h3>
+                        <p>Preparing your meal</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item chef">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Kitchen">
+                    <div class="gallery-overlay">
+                        <h3>Our Kitchen</h3>
+                        <p>Where magic happens</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item food">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Fresh Ingredients">
+                    <div class="gallery-overlay">
+                        <h3>Fresh Ingredients</h3>
+                        <p>Locally sourced produce</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item restaurant">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Bread Basket">
+                    <div class="gallery-overlay">
+                        <h3>Freshly Baked Bread</h3>
+                        <p>Complimentary bread service</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Instagram Section -->
+            <section class="instagram-section">
+                <h2 class="section-title">Follow us on Instagram</h2>
+                <p class="section-subtitle">Tag us <strong>@bellavista_restaurant</strong> for a chance to be featured!</p>
+                <div class="instagram-grid">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Instagram 1">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Instagram 2">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1569929238190-869826b1bb05?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Instagram 3">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Instagram 4">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="restaurant-name">Bella Vista</span>
+                    <span class="tagline">Fine Italian Dining</span>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                    <p class="copyright">&copy; <span id="currentYear"></span> Bella Vista Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <button class="lightbox-nav lightbox-prev">&larr;</button>
+            <button class="lightbox-nav lightbox-next">&rarr;</button>
+        </div>
+    </div>
+
+    <script>
+        // Gallery filtering with smooth transitions
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.gallery-category-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.style.display = 'block';
+                            setTimeout(() => item.classList.add('show'), 10);
+                        } else {
+                            item.classList.remove('show');
+                            setTimeout(() => item.style.display = 'none', 300);
+                        }
+                    });
+                });
+            });
+
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-image');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDesc = document.getElementById('lightbox-description');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const lightboxPrev = document.querySelector('.lightbox-prev');
+            const lightboxNext = document.querySelector('.lightbox-next');
+
+            let currentIndex = 0;
+            let visibleItems = [];
+
+            // Open lightbox
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    const title = this.querySelector('h3').textContent;
+                    const desc = this.querySelector('p').textContent;
+
+                    // Update visible items based on current filter
+                    const activeFilter = document.querySelector('.gallery-category-btn.active').getAttribute('data-filter');
+                    visibleItems = Array.from(galleryItems).filter(item => {
+                        return activeFilter === 'all' || item.classList.contains(activeFilter);
+                    });
+
+                    currentIndex = visibleItems.indexOf(this);
+
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightboxTitle.textContent = title;
+                    lightboxDesc.textContent = desc;
+
+                    lightbox.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Close lightbox
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Navigation
+            lightboxPrev.addEventListener('click', showPrevImage);
+            lightboxNext.addEventListener('click', showNextImage);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (lightbox.style.display === 'flex') {
+                    if (e.key === 'Escape') {
+                        closeLightbox();
+                    } else if (e.key === 'ArrowLeft') {
+                        showPrevImage();
+                    } else if (e.key === 'ArrowRight') {
+                        showNextImage();
+                    }
+                }
+            });
+
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+
+            function showPrevImage() {
+                currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+                updateLightboxContent();
+            }
+
+            function showNextImage() {
+                currentIndex = (currentIndex + 1) % visibleItems.length;
+                updateLightboxContent();
+            }
+
+            function updateLightboxContent() {
+                const item = visibleItems[currentIndex];
+                const img = item.querySelector('img');
+                const title = item.querySelector('h3').textContent;
+                const desc = item.querySelector('p').textContent;
+
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxTitle.textContent = title;
+                lightboxDesc.textContent = desc;
+            }
+
+            // Lazy loading for images
+            const images = document.querySelectorAll('.gallery-item img');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            images.forEach(img => {
+                imageObserver.observe(img);
+            });
+        });
+    </script>
+</body>
+</html>

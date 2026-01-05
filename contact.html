@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="restaurant-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="restaurant-name">Bella Vista</span>
+                        <span class="tagline">Fine Italian Dining</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="menu.html" class="nav-link"><i class="fas fa-utensils"></i> Menu</a></li>
+                        <li><a href="reservations.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Reservations</a></li>
+                        <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contact.html" class="nav-link active"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <!-- Mobile Menu -->
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+                
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <a href="reservations.html" class="reserve-btn">
+                        <i class="fas fa-table"></i> Reserve Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">We'd love to hear from you. Get in touch with us!</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Our Restaurant</h3>
+                            <p>123 Culinary Avenue<br>Flavor Town, FT 12345<br>United States</p>
+                            <a href="#" class="map-link">View on Google Maps →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>Phone: <strong>(555) 123-4567</strong></p>
+                            <p>For reservations, please call during business hours or use our online booking system.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>General Inquiries: <strong>info@bellavista.com</strong></p>
+                            <p>Reservations: <strong>reservations@bellavista.com</strong></p>
+                            <p>Events & Catering: <strong>events@bellavista.com</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p><strong>Monday - Thursday:</strong> 11:00 AM - 10:00 PM</p>
+                            <p><strong>Friday - Saturday:</strong> 11:00 AM - 11:00 PM</p>
+                            <p><strong>Sunday:</strong> 12:00 PM - 9:00 PM</p>
+                            <p class="note">Kitchen closes 30 minutes before closing time</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons-large">
+                            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#"><i class="fab fa-tripadvisor"></i> TripAdvisor</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="phone" placeholder="(123) 456-7890">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="reservation">Reservation Question</option>
+                                <option value="event">Private Event Inquiry</option>
+                                <option value="feedback">Feedback & Reviews</option>
+                                <option value="career">Career Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" required rows="6" placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" checked>
+                                Subscribe to our newsletter for updates and special offers
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Do you accommodate dietary restrictions?</h3>
+                        <p>Yes! We're happy to accommodate dietary restrictions including vegetarian, vegan, gluten-free, and allergies. Please inform your server or note it in your reservation.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Is there a dress code?</h3>
+                        <p>We recommend smart casual attire. While we don't require formal wear, we ask guests to avoid beachwear, athletic wear, or overly casual clothing.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you offer parking?</h3>
+                        <p>Yes, we have complimentary valet parking available. There's also street parking and a public parking garage one block away.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Can I host a private event at Bella Vista?</h3>
+                        <p>Absolutely! We have private dining rooms available for events from 10-100 guests. Contact our events team at events@bellavista.com for more information.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you offer takeout or delivery?</h3>
+                        <p>Yes, we offer both takeout and delivery through our website and partner apps. Our full menu is available for takeout.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Are children welcome?</h3>
+                        <p>Yes, children are welcome! We have a children's menu available and high chairs upon request.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="restaurant-name">Bella Vista</span>
+                    <span class="tagline">Fine Italian Dining</span>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                    <p class="copyright">&copy; <span id="currentYear"></span> Bella Vista Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Contact form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you within 24 hours.');
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>

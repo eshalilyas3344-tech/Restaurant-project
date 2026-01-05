@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="restaurant-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="restaurant-name">Bella Vista</span>
+                        <span class="tagline">Fine Italian Dining</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="menu.html" class="nav-link"><i class="fas fa-utensils"></i> Menu</a></li>
+                        <li><a href="reservations.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Reservations</a></li>
+                        <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contact.html" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+                    
+                    <!-- Mobile Menu -->
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+                
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <a href="reservations.html" class="reserve-btn">
+                        <i class="fas fa-table"></i> Reserve Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Reservations Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Make a Reservation</h1>
+            <p class="page-subtitle">Book your table for an unforgettable dining experience</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="reservation-content">
+                <!-- Booking Form -->
+                <div class="reservation-form-container">
+                    <h2 class="section-title">Book Your Table</h2>
+                    <form id="reservationForm" class="reservation-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7">7 People</option>
+                                    <option value="8">8 People</option>
+                                    <option value="9">9+ People</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requests, dietary restrictions, or occasion notes..."></textarea>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label>
+                                    <input type="checkbox" name="newsletter" checked>
+                                    Subscribe to our newsletter for updates and special offers
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-calendar-check"></i> Confirm Reservation
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Reservation Info -->
+                <div class="reservation-info">
+                    <h3>Reservation Information</h3>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Thursday: 11am - 10pm</p>
+                            <p>Friday - Saturday: 11am - 11pm</p>
+                            <p>Sunday: 12pm - 9pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Reservations</h4>
+                            <p>Call us at: <strong>(555) 123-4567</strong></p>
+                            <p>For large groups (8+ people), please call in advance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div>
+                            <h4>Important Notes</h4>
+                            <ul>
+                                <li>Reservations are held for 15 minutes past the booking time</li>
+                                <li>For parties of 6+, a 48-hour cancellation notice is required</li>
+                                <li>Dress code: Smart casual</li>
+                                <li>We accommodate dietary restrictions - please inform us in advance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-glass-cheers"></i>
+                        <div>
+                            <h4>Special Occasions</h4>
+                            <p>Celebrating a birthday, anniversary, or other special occasion? Let us know in your special requests, and we'll make it memorable!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="restaurant-name">Bella Vista</span>
+                    <span class="tagline">Fine Italian Dining</span>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                    <p class="copyright">&copy; <span id="currentYear"></span> Bella Vista Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Set minimum date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('date').min = today;
+            
+            // Form submission
+            document.getElementById('reservationForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your reservation! We will confirm your booking via email shortly.');
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
